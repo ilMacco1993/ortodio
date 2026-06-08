@@ -3,7 +3,7 @@ name: Deploy OrtoDio
 on:
   push:
     branches:
-      - main
+      - ortodio
 
 jobs:
   deploy:

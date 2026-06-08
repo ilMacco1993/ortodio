@@ -1,1 +1,8 @@
-
+{
+  "name": "OrtoDio",
+  "short_name": "OrtoDio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F7F3EE",
+  "theme_color": "#8FA68E"
+}

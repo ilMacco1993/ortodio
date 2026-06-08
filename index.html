@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,87 +7,59 @@
 <title>OrtoDio</title>
 
 <link rel="manifest" href="manifest.json">
-
-<meta name="theme-color" content="#8FA68E">
-
 <link rel="stylesheet" href="styles.css">
+
+<meta name="theme-color" content="#A8B59A">
 </head>
 
 <body>
 
-<header>
+<header class="header">
+  <div class="logo">
+    🏺🌱
+  </div>
 
-<div class="logo">
-
-<div class="logo-icon">
-🏺🌱
-</div>
-
-<div>
-<h1>OrtoDio</h1>
-<p>Vado di coccio, cresco meglio.</p>
-</div>
-
-</div>
-
+  <div>
+    <h1>OrtoDio</h1>
+    <p>Vado di coccio, cresco meglio.</p>
+  </div>
 </header>
 
-<main>
+<nav class="menu">
 
-<section class="hero">
+<button onclick="showView('dashboard')">
+🏠 Dashboard
+</button>
 
-<h2>Benvenuta Erica 🌿</h2>
+<button onclick="showView('parcelle')">
+🌱 Parcelle
+</button>
 
-<p>
-Gestisci orto, fermentati e produzioni agricole
-in un unico spazio.
-</p>
+<button onclick="showView('calendario')">
+📅 Calendario
+</button>
 
-</section>
+<button onclick="showView('campagna')">
+📒 Quaderno
+</button>
 
-<section class="cards">
+<button onclick="showView('fermentati')">
+🫙 Fermentati
+</button>
 
-<div class="card">
-<h3>🌱 Parcelle</h3>
-<p>Gestisci appezzamenti e colture.</p>
-</div>
-
-<div class="card">
-<h3>📅 Calendario</h3>
-<p>Semine, trattamenti e raccolte.</p>
-</div>
-
-<div class="card">
-<h3>📒 Quaderno</h3>
-<p>Registro operazioni agricole.</p>
-</div>
-
-<div class="card">
-<h3>🫙 Fermentati</h3>
-<p>Lotti, ricette e produzioni.</p>
-</div>
-
-<div class="card">
-<h3>📊 Report</h3>
-<p>Costi, rese e statistiche.</p>
-</div>
-
-</section>
-
-</main>
-
-<nav class="bottom-nav">
-
-<button>🏠</button>
-<button>🌱</button>
-<button>📅</button>
-<button>🫙</button>
-<button>📊</button>
+<button onclick="showView('report')">
+📊 Report
+</button>
 
 </nav>
+
+<main id="app"></main>
 
 <script src="app.js"></script>
 
 </body>
-
 </html>
+
+
+
+

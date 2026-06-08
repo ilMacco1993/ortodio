@@ -1,1 +1,1 @@
-
+console.log("OrtoDio avviato");
